@@ -3,7 +3,7 @@
 
 > A restaurant page built with HTML/CSS/JavaScript
 
-See it live [here]().
+See it live [here](https://gferrarocamus.github.io/restaurant-page/).
 
 ## Contributors
 
