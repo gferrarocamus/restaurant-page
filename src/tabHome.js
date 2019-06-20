@@ -19,9 +19,7 @@ const homepage = () => {
   });
 
   const img = new Image();
-  img.src =
-    'https://images.unsplash.com/photo-1513003604845-103fe8aaf4e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80';
-
+  img.src = 'https://images.unsplash.com/photo-1513003604845-103fe8aaf4e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80';
   const appendToElement = [h1, h3, img, p1, p2];
   appendToElement.forEach((item) => {
     element.appendChild(item);

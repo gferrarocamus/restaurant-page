@@ -3,7 +3,6 @@ import homepage from './tabHome';
 import menu from './tabMenu';
 import contact from './tabContact';
 import pageLoad from './pageLoad';
-import { init } from 'events';
 
 let activeTab = homepage();
 
