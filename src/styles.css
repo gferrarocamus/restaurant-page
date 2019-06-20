@@ -18,7 +18,7 @@ body {
 
 .navbar div {
   padding: 15px 30px;
-  background-color:#C7E1CC;
+  background-color: #c7e1cc;
   border: 1px solid #ffffff;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar div.tab:hover {
-  background-color: #8CAF83;
+  background-color: #8caf83;
 }
 
 .navbar div.active {
@@ -59,8 +59,8 @@ img {
   padding: 18px 0 0;
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .navbar div {
     padding: 15px 15px;
-  }  
+  }
 }
