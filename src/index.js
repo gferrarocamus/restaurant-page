@@ -12,7 +12,7 @@ const setActive = (e) => {
   [...tabs].forEach((tab) => {
     tab.classList.remove('active');
   })
-  const tab = e.target.parentElement;
+  const tab = e.target;
   tab.classList.add('active');
   setActiveTab(e.target.id);
   pageLoad(activeTab);

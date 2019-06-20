@@ -26,19 +26,18 @@ body {
   flex-grow: 1;
 }
 
+.navbar div.tab:hover {
+  background-color: #8CAF83;
+}
+
 .navbar div.active {
   background-color: #ffffff;
   border: none;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
+.navbar div.active:hover {
   color: rgba(0, 0, 0, 0.5);
-  text-decoration: underline;
+  background-color: #ffffff;
 }
 
 .header,
@@ -54,6 +53,10 @@ img {
   margin: 0 auto;
   max-width: 100%;
   padding: 18px 0;
+}
+
+.menu img {
+  padding: 18px 0 0;
 }
 
 @media (max-width: 576px) { 
