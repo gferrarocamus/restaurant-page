@@ -4,8 +4,6 @@ import menu from './tabMenu';
 import contact from './tabContact';
 import pageLoad from './pageLoad';
 
-let activeTab = homepage();
-
 const setActive = (e) => {
   const tabs = document.getElementsByClassName('tab');
   [...tabs].forEach((tab) => {
@@ -13,17 +11,16 @@ const setActive = (e) => {
   });
   const tab = e.target;
   tab.classList.add('active');
-  setActiveTab(e.target.id);
-  pageLoad(activeTab);
+  pageLoad(getActiveTab(e.target.id));
 };
 
-const setActiveTab = (id) => {
+const getActiveTab = (id) => {
   if (id === 'contact') {
-    activeTab = contact();
+    return contact();
   } else if (id === 'menu') {
-    activeTab = menu();
+    return menu();
   } else {
-    activeTab = homepage();
+    return homepage();
   }
 };
 
@@ -37,4 +34,4 @@ const initNavbar = () => {
 };
 
 initNavbar();
-pageLoad(activeTab);
+pageLoad(getActiveTab('home'));
